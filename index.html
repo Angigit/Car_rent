@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car rental</title>
+    <script src="https://kit.fontawesome.com/2893d5fc37.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="home">
+    <!-- change to the compact version on small screens: navbar-expand-sm -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Car rental</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon">&nbsp;</span>
+        </button>
+        <!-- a navbarCollapse id alapján működik a gomb -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home-section" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#explore-head-section" class="nav-link">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a href="#create-head-section" class="nav-link">Renting</a>
+            </li>
+            <li class="nav-item">
+              <a href="#share-head-section" class="nav-link">Share</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home-section">
+      <div class="dark-overlay">
+        <div class="home-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 d-none d-lg-block">
+                <h1 class="display-4">
+                  <strong>Car rental</strong> application
+                </h1>
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fa fa-check"></i>
+                  </div>
+
+                  <div class="p-4 align-self-end">
+                    Rent a car easily in the city center. Just some easy 
+                    steps to rent your favourite car. Firstly, fill out
+                    the form to sign in and choose a car whatever you want. 
+                  </div>
+                </div>
+                <!-- flex-row -->
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fa fa-check"></i>
+                  </div>
+
+                  <div class="p-4 align-self-end">
+                    You do not need much time for rent or to navigate a 
+                    complicated website, you only need to choose your
+                    favourite car and rent it. Do not hesitate, rent today.
+					
+                  </div>
+                </div>
+                <!-- flex-row -->
+                <div class="d-flex flex-row">
+                  <div class="p-4 align-self-start">
+                    <i class="fa fa-check"></i>
+                  </div>
+
+                  <div class="p-4 align-self-end">
+                    You can rent a car for 24 hours, two days or one week.
+                    If you want, you have an opportunity to rent it for a special time.
+                    Contact us for a special offer.
+                  </div>
+                </div>
+                <!-- flex-row -->
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-primary text-center card-form">
+                  <div class="card-body">
+                    <h3>Sign Up Now!</h3>
+                    <p>Please fill out this form to sign</p>
+                    <form>
+                      <div class="form-group">
+                        <!-- large form control -->
+                        <input
+                          type="text"
+                          class="form-control form-control-lg"
+                          placeholder="Username"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control form-control-lg"
+                          placeholder="E-mail"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control form-control-lg"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <input
+                          type="password"
+                          class="form-control form-control-lg"
+                          placeholder="Confirm Password"
+                        />
+                      </div>
+                      <input id="send"
+                        type="submit"
+                        class="btn btn-outline-light btn-block"
+                        value="Send"
+                      />
+                    </form>
+                  </div>
+                  <!-- card-body -->
+                </div>
+              </div>
+              <!-- col-lg-4 -->
+            </div>
+            <!-- row -->
+          </div>
+          <!-- container -->
+        </div>
+        <!-- home-inner -->
+      </div>
+      <!-- dark-overlay -->
+    </header>
+
+    <!-- explore head section -->
+    <section id="explore-head-section">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="py-5">
+              <h1 class="display-4">Explore</h1>
+              <p class="lead">
+                Explore the wide range of cars with us. You can find a little
+                car or a big car, two-doors, or four-doors, in simple colors
+                or colourful, open roof or closed roof. You will surely find
+                a car that satisfies your all needs. Look around in our database
+                and choose your favourite car yet today. 
+              </p>
+              <a href="./car.html" target="blank" class="btn btn-outline-secondary">Look around here!</a>
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- explore section -->
+    <!-- section#explore-section.bg-light.text-muted.py-5>.container>.row>.col-md-6*2 -->
+
+    <section id="explore-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid mb-3 rounded-circle"
+              src="./img/pexels-photo-164634.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Explore the joy of car rental!</h3>
+            <span>
+              Car rental is no longer just the privilege of big and rich people. 
+              Nowadays, anyone can rent a car easily and quickly. The price is 
+              not as high as it used to be and the selection is also huge. If
+              you need a car immediately, just go to our website and if you have 
+              already registered, just rent a car for yourself easily. 
+              Take advantage of car rental and feel free to use our service.
+            </span>
+            <!-- .d-flex.d-flex-row>.p-4.align-self-start>i.fa.fa-check^lipsum20.p-4.align-self-end -->
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check icon-dark"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                You can rent a car easily and quickly. The price is absolutely
+                acceptable. There are no hidden costs either. You do not need too
+                much money for renting. If you want to rent for 24 hours, you can
+                already do it with 250 dolars.
+                </span
+              >
+            </div>
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check icon-dark"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                The process is also very easy. As you know, you only need to
+                visit our website and after registration just take some easy steps.
+                You can rent a car anywhere, anytime, confortably even from your
+                home, using your mobile. 
+                </span
+              >
+            </div>
+          </div>
+          <!-- col-md-6 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- create head section -->
+    <section id="create-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="py-5">
+              <h1 class="display-4">Renting</h1>
+              <p class="lead">
+                In this section you can rent your new car. If you want
+                to choose your favourte car you will find the same list
+                as in the previous section and just press the renting button 
+                next to your car. It is very easy, quickly and simple.
+              </p>
+              <a href="#" class="btn btn-outline-light">Rent your car here!</a>
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- create section -->
+    <!-- section#explore-section.bg-light.text-muted.py-5>.container>.row>.col-md-6*2 -->
+
+    <section id="create-section" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Use your mobile!</h3>
+            <span>
+              You can donwload our mobile application to your phone. Easy to use
+              and you can rent with your phone very simly, anytime, anywhere. Explore
+              our mobile app and the joy of the car rental. You will receive a confirmation
+              email about your renting and the car will arrive to your place in one hour.
+            </span>
+            <!-- .d-flex.d-flex-row>.p-4.align-self-start>i.fa.fa-check^lipsum20.p-4.align-self-end -->
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                Use our mobile app to rent your car very easily, quickly and simply. 
+                Use it anytime, anywhere, confortably even from your home. Do not
+                hesitate, use our mobile app and enjoy your rented car yet today. 
+                </span>
+            </div>
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                You do not need to wait for a long time, and do not take
+                more steps. After our confirmation email, your car will 
+                arrive to your place. Tt's so easy to rent a car from us.
+                Rent your car today with our mobile app.
+              </span>
+            </div>
+          </div>
+          <!-- col-md-6 -->
+          <div class="col-md-6">
+            <img
+              class="img-fluid mb-3 rounded-circle"
+              src="./img/app1.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- share head section -->
+    <section id="share-head-section" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <div class="py-5">
+              <h1 class="display-4">Share</h1>
+              <p class="lead">
+                If you like our service share it with your friends. You can
+                show them how easy to use our mobile app to rent a car.
+                Tell them that they can find us on Facebook, Twitter, Youtube
+                and other social media platform. Use the social media icons
+                below.
+              </p>
+              <a href="#" class="btn btn-outline-light">Find out more!</a>
+            </div>
+          </div>
+          <!-- col -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- explore section -->
+    <!-- section#share-section.bg-light.text-muted.py-5>.container>.row>.col-md-6*2 -->
+
+    <section id="share-section" class="bg-light text-muted py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              class="img-fluid mb-3 rounded-circle"
+              src="./img/app3.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6">
+            <h3>Explore together!</h3>
+            <span>
+              Invite your friends for a test drive and you’ll see they instantly 
+              fall in love with your new car. After that, there is no question 
+              that they will also want to rent a car. Discover the experience of 
+              driving a rented car together and share your experiences. You will
+              have a unique and unrepeatable adventure for sure. Don't miss the 
+              opportunity, rent a car together.
+            </span>
+            <!-- .d-flex.d-flex-row>.p-4.align-self-start>i.fa.fa-check^lipsum20.p-4.align-self-end -->
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check icon-dark"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                A unique and unrepeatable adventure that you can share with 
+                your friends. Get a lasting experience for each other with a 
+                rented car and explore the world together. 
+              </span>
+            </div>
+            <div class="d-flex d-flex-row">
+              <div class="p-4 align-self-start">
+                <i class="fa fa-check icon-dark"></i>
+              </div>
+              <span class="p-4 align-self-end">
+                If you’ve shared your experiences with others and they’ve also 
+                rented a car from us, we’re looking forward to a discounted 
+                ride you’ve got from the recommendations. Do not hesitate to
+                recommend our site to your friends.
+                </span>
+            </div>
+          </div>
+          <!-- col-md-6 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!-- footer -->
+
+    <!-- footer#main-footer.bg-dark>.container>.row>.col.text-center>.py-4>h1.h3{SmartBuild}+p{Copyright &copy; 2018}+button.btn.btn-primary[data-toggle="modal"][data-target="#contactModal"]{Contact Us} -->
+    <footer id="main-footer" class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i>  Facebook</a></li>
+              <li><a href="https://twitter.com/?lang=en" target="blank"><i class="fab fa-twitter"></i>  Twitter</a></li>
+              <li><a href="https://www.youtube.com/" target="blank"><i class="fab fa-youtube"></i>  Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col-6 text-center">
+            <div class="py-4">
+              <h1 class="h3">Car rent</h1>
+              <p>Copyright &copy; 2020</p>
+              <button
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#contactModal"
+              >
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- .modal.fade#contactModal>.modal-dialog>.modal-content>.modal-header>h5.modal-title#contactModalTitle{Contact Us}+button.close[data-dismiss="modal"]>span{&times;} -->
+    <div id="contactModal" class="modal fade text-dark">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="contactModalTitle" class="modal-title">Contact Us</h5>
+            <button class="close" data-dismiss="modal">
+              <span>&times;</span>
+            </button>
+          </div>
+          <!-- .modal-body>form>.(form-group>label[for="name"]{Name}+input[type="text"].form-control)*3 -->
+          <div class="modal-body">
+            <form action="">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="text" />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control"></textarea>
+              </div>
+            </form>
+          </div>
+          <!-- modal-body -->
+          <div class="modal-footer">
+            <button class="btn btn-primary btn-block">Submit</button>
+          </div>
+        </div>
+        <!-- modal-content -->
+      </div>
+      <!-- modal-dialog -->
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
